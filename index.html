@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="description" content="Vezi lista cu declarații date de Călin Georgescu. Pentru fiecare declarație găsești și sursa video">
+  <meta property="og:title" content="Ce-a mai zis Călin? - Listă declarații Călin Georgescu" />
+  <meta property="og:description" content="Adunate din popor, pentru popor." />
+  <meta property="og:image" content="https://ceamaiziscalin.ro/georgescu_1_site.jpg" />
+  <meta property="og:url" content="https://ceamaiziscalin.ro/" />
+  <meta property="og:type" content="website" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJTLJMEK42"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-MJTLJMEK42', { 'anonymize_ip': true });
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ce-a mai zis Călin? - Listă declarații Călin Georgescu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f3f4f6;
+      color: #333;
+    }
+    .phrase-box {
+      margin: 20px auto;
+      padding: 40px 20px;
+      max-width: 700px;
+      border: 2px solid #ddd;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 20px; 
+      font-weight: 600;
+      color: #2c3e50;
+      cursor: pointer; /* Indicate that the box is clickable */
+    }
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 24px;
+      font-weight: 500;
+      max-width: 400px; /* Limit button width */
+      margin: 0 auto; /* Center the button */
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .cta-message {
+      font-size: 16px;
+      font-weight: 500;
+      color: #2c3e50;
+      text-align: center;
+      padding: 10px 0;
+      background-color: #f3f4f6;
+      margin-top: 30px;
+      max-width: 500px; /* Limit button width */
+      margin: 0 auto; /* Center the button */
+    }
+    .footer-link {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+    .footer-link a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .footer-link a:hover {
+      text-decoration: underline;
+    }
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      display: none; /* Ascuns inițial */
+    }
+    .cookie-banner p {
+      margin: 0;
+      padding-right: 10px;
+      display: inline-block;
+    }
+    .cookie-banner button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .cookie-banner button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Ce-a mai zis Călin?</h1>
+  <div class="phrase-box" id="phraseBox" onclick="openSource();"></div>
+  <button onclick="generatePhrase(); trackButtonClick()">Ce-a mai zis Călin?</button>
+  <script src="script.js?v=3"></script>
+  
+  <!-- Call-to-Action -->
+  <div class="cta-message">Click pe declarație pentru sursă!</div>
+
+  <!-- Footer -->
+  <div class="footer-link">
+    <form action="https://www.paypal.com/donate" method="post" target="_top">
+      <input type="hidden" name="hosted_button_id" value="F4JC3WL2M5AZU" />
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+    </form>
+    <a href="despre-noi.html">Despre noi</a>
+    <a>|</a>
+    <a href="politica-confidentialitate.html">Politica de Confidențialitate</a>
+  </div>
+  
+  <!-- Cookie banner -->
+  <div id="cookieBanner" class="cookie-banner">
+    <p>
+      Acest site folosește cookie-uri pentru a îmbunătăți experiența utilizatorului. 
+      <a href="politica-confidentialitate.html" style="color: #007bff; text-decoration: underline;">Află mai multe</a>.
+    </p>
+    <button id="acceptCookies" onclick="acceptCookies()">Accept</button>
+  </div>
+</body>
+</html>
